@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+**/.venv/
+.pytest_cache/
+
+# LaTeX build artifacts (keep report.pdf)
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+
+# Scilab editor backups
+*.sce~
+*.sci~
+*.sce.bak
+*.sci.bak
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/.ropeproject/

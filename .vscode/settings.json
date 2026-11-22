@@ -1,0 +1,9 @@
+{
+  "Scilab.SCI": "/home/user/Programs/scilab-2026.1.0",
+  "Scilab.withGraphic": true,
+  "Scilab.scriptEditionFeatures": true,
+  "[scilab]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  }
+}

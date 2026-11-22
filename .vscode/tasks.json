@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Scilab: Run active script",
+      "type": "process",
+      "command": "/home/user/Programs/scilab-2026.1.0/bin/scilab",
+      "args": [
+        "-nw",
+        "-f",
+        "${file}",
+        "-quit"
+      ],
+      "options": {
+        "cwd": "${fileDirname}",
+        "env": {
+          "DEBUG": ""
+        }
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Python: Run task 3 orbit model",
+      "type": "process",
+      "command": "${workspaceFolder}/3/.venv/bin/python",
+      "args": [
+        "${workspaceFolder}/3/simulate_orbit.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/3"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "LaTeX: Build task 2 report",
+      "type": "process",
+      "command": "pdflatex",
+      "args": [
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "report.tex"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/2"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

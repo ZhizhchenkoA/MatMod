@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "scilab",
+      "request": "launch",
+      "name": "Scilab: Run active script",
+      "file": "${file}",
+      "workingDirectory": "${fileDirname}",
+      "SCI": "/home/user/Programs/scilab-2026.1.0"
+    }
+  ]
+}
